@@ -72,8 +72,8 @@ function isString(str) {
  *   concatenateStrings('aa', '') => 'aa'.
  *   concatenateStrings('', 'bb') => 'bb'
  */
-function concatenateStrings(value1, value2 ) {
-  let result 
+function concatenateStrings(/* value1, value2 */) {
+  throw new Error('Not implemented');
 }
 
 /**
