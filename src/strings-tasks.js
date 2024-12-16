@@ -19,10 +19,15 @@
  *   getStringLength(null) => 0
  *   getStringLength(undefined) => 0
  */
-function getStringLength(string) {
+function getStringLength(str) {
   let a = 0;
-  if(typeof string == "string"){
-  return string.length;}else{return 0}  
+  const b = typeof str;
+  if (b === 'string') {
+    a = str.length;
+  } else {
+    a = 0;
+  }
+  return a;
 }
 
 /**
@@ -39,12 +44,20 @@ function getStringLength(string) {
  *   isString('test') => true
  *   isString(new String('test')) => true
  */
-function isString(string) {
-  let a = typeof string;
-  if(a == string){
-    return true
-  }else {return false}
-  throw new Error('Not implemented');
+function isString(str) {
+  let a = 0;
+  let b = '';
+  if (str === undefined || str === null) {
+    b = false;
+  } else {
+    a = typeof str.valueOf();
+  }
+  if (a === 'string') {
+    b = true;
+  } else {
+    b = false;
+  }
+  return b;
 }
 
 /**
@@ -59,8 +72,8 @@ function isString(string) {
  *   concatenateStrings('aa', '') => 'aa'.
  *   concatenateStrings('', 'bb') => 'bb'
  */
-function concatenateStrings(/* value1, value2 */) {
-  throw new Error('Not implemented');
+function concatenateStrings(value1, value2 ) {
+  let result 
 }
 
 /**
